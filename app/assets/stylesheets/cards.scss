@@ -1,0 +1,97 @@
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-trip > img {
+  height: auto;
+  width: auto;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px;
+  margin-top: -15px;
+}
+.card-trip h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: 3px;
+}
+
+.container {
+font-size: 10px;
+display: flex;
+justify-content: inherit;
+margin-top: 15px;
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-flat:hover {
+  background: #1BCB7F;
+  color: white;
+}
+
+.btn-gradient {
+   color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #167FFB;
+  transition: background 0.3s ease;
+  font-weight: bold;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#147EFF, #0F67DA);
+  color: white;
+}
+
+.btn-warning{
+   color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #dd1e1e;
+  transition: background 0.3s ease;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-warning:hover {
+  background: linear-warning(rgb(147, 42, 42), rgb(147, 42, 42));
+  color: rgb(147, 42, 42);
+}

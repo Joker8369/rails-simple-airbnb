@@ -1,0 +1,29 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+<div class="container">
+<h1>Famous Flats</h1>
+<br><br>
+ </div>
+</div>
+<div class="card">
+<% @flats.each do |flat| %>
+    <div class="card-trip">
+     <img src="https://images.unsplash.com/photo-1614628079765-6c164f4bd970?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YXBwYXJ0ZW1lbnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+      <div class="card-trip-infos">
+        <div>
+          <h2><%=flat.name%></h2>
+          <p><%= flat.description %><br>
+          <div class="container">
+            <div><%= link_to "See more !", flat_path(flat), class: "btn btn-flat" %></div>
+            <div><%= link_to 'Edit', edit_flat_path(flat), class: "btn btn-gradient"%></div>
+            <div><%= link_to "Delete", flat_path(flat), class: "btn btn-warning", method: :delete, data: { confirm: "Are you sure?" }%></div>
+          </p>
+          </div>
+        </div>
+        <h2 class="card-trip-pricing">💸<%= flat.price_per_night %>€</h2>
+        <h3 class="card-trip-user"> 🫂 <%= flat.number_of_guests %></h3>
+      </div>
+    </div>
+<% end %>
+</div>
+<br><br><br>
+<h2><%= link_to " + Add a new flat", new_flat_path%></h2>

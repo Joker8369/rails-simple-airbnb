@@ -1,0 +1,19 @@
+<h1>Flat#show</h1>
+<p>Find me in app/views/flats/show.html.erb</p>
+
+Name :<%= @flat.name %><br>
+Address :<%= @flat.address %><br>
+description:<%= @flat.description %><br>
+Price_per_night :<%= @flat.price_per_night %><br>
+number_of_guests :<%= @flat.number_of_guests %><br>
+<%# <% @flat.reviews.each do |review| %>
+  <%# <li>
+  Content: <%= review.content %><br>
+  <%# Rating: <%=review.rating%><br>
+  <%# </li> %>
+<%# <% end %><br> %> %> %> %>
+
+<%= link_to 'Back', flats_path %>
+<%= link_to 'Edit', edit_flat_path(@flat) %>
+<%= link_to "Delete", flat_path(@flat), method: :delete, data: { confirm: "Are you sure?" } %><br>
+<%# <%= link_to 'Add a rating and a content', new_flat_review_path(@flat) %> %>
