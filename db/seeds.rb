@@ -6,5 +6,5 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
-10.times{Flat.create(name: Faker::Book.title, address: Faker::Address.full_address, price_per_night: Faker::Number.binary(digits: 4), number_of_guests: Faker::Number.binary(digits: 3), description: Faker::Movie.quote )}
+Flat.destroy_all
+10.times{Flat.create(name: Faker::House.room, address: Faker::Address.full_address, price_per_night: Faker::Number.binary(digits: 4), number_of_guests: Faker::Number.binary(digits: 3), description: Faker::Movie.quote )}

@@ -13,7 +13,7 @@ number_of_guests :<%= @flat.number_of_guests %><br>
   <%# </li> %>
 <%# <% end %><br> %> %> %> %>
 
-<%= link_to 'Back', flats_path %>
+<%= link_to 'Back', root_path %>
 <%= link_to 'Edit', edit_flat_path(@flat) %>
 <%= link_to "Delete", flat_path(@flat), method: :delete, data: { confirm: "Are you sure?" } %><br>
 <%# <%= link_to 'Add a rating and a content', new_flat_review_path(@flat) %> %>
