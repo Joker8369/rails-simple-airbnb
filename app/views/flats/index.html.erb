@@ -7,11 +7,12 @@
 <div class="card">
 <% @flats.each do |flat| %>
     <div class="card-trip">
-     <img src="https://loremflickr.com/320/240/<%= flat.name %>" />
+     <%# <img src="https://loremflickr.com/320/240/<%= flat.name %>" /> %>
       <div class="card-trip-infos">
         <div>
           <h2><%=flat.name%></h2>
-          <p><%= flat.description %><br>
+          <p><%= flat.latitude %><br>
+          <p><%= flat.longitude %><br>
           <div class="container">
             <div><%= link_to "See more !", flat_path(flat), class: "btn btn-flat" %></div>
             <div><%= link_to 'Edit', edit_flat_path(flat), class: "btn btn-gradient"%></div>
@@ -27,3 +28,5 @@
 </div>
 <br><br><br>
 <h2><%= link_to " + Add a new flat", new_flat_path%></h2>
+
+      <div id="map" style="width: 100%; height: 600px;"data-markers="<%= @markers.to_json %>"></div>

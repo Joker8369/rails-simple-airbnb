@@ -7,4 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Flat.destroy_all
-10.times{Flat.create(name: Faker::House.room, address: Faker::Address.full_address, price_per_night: Faker::Number.binary(digits: 4), number_of_guests: Faker::Number.binary(digits: 3), description: Faker::Movie.quote )}
+10.times do
+  Flat.create!(
+    name: Faker::House.room,
+    address: Faker::Address.full_address,
+    price_per_night: Faker::Number.binary(digits: 4),
+    number_of_guests: Faker::Number.binary(digits: 3),
+    description: Faker::Movie.quote
+  )
+end

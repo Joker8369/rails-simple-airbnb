@@ -80,6 +80,7 @@ GEM
     childprocess (3.0.0)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    dotenv (2.7.6)
     erubi (1.10.0)
     execjs (2.8.1)
     faker (2.18.0)
@@ -87,6 +88,7 @@ GEM
     ffi (1.15.3)
     font-awesome-sass (5.6.1)
       sassc (>= 1.11)
+    geocoder (1.6.7)
     globalid (0.5.2)
       activesupport (>= 5.0)
     i18n (1.8.10)
@@ -216,8 +218,10 @@ DEPENDENCIES
   bootstrap (~> 4.0)
   byebug
   capybara (>= 2.15)
+  dotenv
   faker
   font-awesome-sass (~> 5.6.1)
+  geocoder
   jbuilder (~> 2.7)
   listen (~> 3.2)
   puma (~> 4.1)
@@ -238,4 +242,4 @@ RUBY VERSION
    ruby 2.7.3p183
 
 BUNDLED WITH
-   2.2.21
+   2.2.25
